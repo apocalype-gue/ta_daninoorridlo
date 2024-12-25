@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>ARTA | Solusi Arsitektur dan Konstruksi Terpercaya</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo"><img src="./IMG/logo.png" alt=""></div>
+
+        <nav>
+            <ul>
+                <li><a href="" style="--i:1;" class="active">HOME</a></li>
+                <li><a href="blog.html" style="--i:2;">BLOG</a></li>
+                <li><a href="lokasi.html" style="--i:3;">LOKASI</a></li>
+                <li><a href="pesanan.html" style="--i:4;">PESANAN</a></li>
+                <div class="login">
+                    <a href="https://wa.me/6289508964726" class="btn">Hubungi Kami</a>
+                </div>
+            </ul>
+
+            <div class="menu-toggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <h1>ARTA</h1>
+        <p>Solusi Arsitektur dan Konstruksi Terpercaya.</p>
+    </section>
+
+    <section class="visi">
+        <h2 class="heading">Visi <span>Misi</span></h2>
+
+        <div class="add">
+            <div class="card">
+                <h3>Visi</h3>
+                <p>Menjadi perusahaan arsitektur terdepan di Indonesia yang menghadirkan solusi desain berkelanjutan dan
+                    inovatif untuk menciptakan ruang yang memenuhi kebutuhan masa kini dan masa depan.</p>
+            </div>
+
+            <div class="card">
+                <h3 style="color: #AB886D;">Misi</h3>
+                <div class="misi">
+                    <p>1. Mengembangkan desain arsitektur yang mengintegrasikan kebutuhan klien, lingkungan, dan teknologi</p>
+                    <p>2. Menerapkan prinsip berkelanjutan dalam setiap proyek</p>
+                    <p>3. Memberikan layanan profesional dengan standar kualitas tertinggi</p>
+                </div>
+            </div>            
+        </div>
+
+        <div class="note">
+            <h3>Sejarah <span>perusahaan</span></h3>
+            <p>Didirikan pada tahun 2010 oleh sekelompok arsitek muda berbakat, ARTA Architecture telah tumbuh menjadi salah satu perusahaan konsultan arsitektur terkemuka di Indonesia.
+                Bermula dari sebuah studio kecil di Kudus, kini ARTA telah sukses menangani berbagai proyek bergengsi di seluruh penjuru negeri. 
+                Sebagai penyedia layanan arsitektur dan konstruksi, kami selalu mengutamakan kualitas, inovasi, dan kepuasan pelanggan. 
+                Dengan pengalaman mendalam dalam desain dan pembangunan, kami menyediakan solusi terpadu untuk menciptakan ruang yang tidak hanya estetis tetapi juga fungsional dan sesuai dengan kebutuhan Anda.</p>
+        </div>
+    </section>
+
+    <div class="satu">
+        <p>Anda membutuhkan bantuan?</p>
+        <a href="https://wa.me/6289508964726" class="contact-btn" target="_blank">Hubungi Kami</a>
+    </div>
+    
+
+    <div class="dua">
+        <div class="dua-main">
+            <div class="btn-main">
+                <img src="./IMG/logo.png" alt="">
+                <p>Kami berkomitmen menciptakan hasil desain yang menarik dan memberikan anggaran biaya konstruksi yang terbaik</p>
+            </div>
+
+            <div class="btn-main">
+                <h3>Quick <span>Links</span></h3>
+                <a href="index.html" class="active">HOME</a>
+                <a href="blog.html">BLOG</a>
+                <a href="lokasi.html">LOKASI</a>
+                <a href="pesanan.html">PESANAN</a>
+            </div>
+
+            <div class="btn-main">
+                <h3>Follow <span>Us</span></h3>
+                <a href="">Instagram</a>
+                <a href="">Twitter</a>
+                <a href="">Facebook</a>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle input');
+        const nav = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', function () {
+            nav.classList.toggle('slide');
+        });
+    </script>
+</body>
+
+</html>

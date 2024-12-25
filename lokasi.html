@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="lokasi.css">
+    <title>ARTA | Solusi Arsitektur dan Konstruksi Terpercaya</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo"><img src="./IMG/logo.png" alt=""></div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html" style="--i:1;">HOME</a></li>
+                <li><a href="blog.html" style="--i:2;">BLOG</a></li>
+                <li><a href="" style="--i:3;" class="active">LOKASI</a></li>
+                <li><a href="pesanan.html" style="--i:4;">PESANAN</a></li>
+                <div class="login">
+                    <a href="https://wa.me/6289508964726" class="btn">Hubungi Kami</a>
+                </div>
+            </ul>
+
+            <div class="menu-toggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="office-grid">
+            <!-- Kantor Pusat Jakarta -->
+            <div class="office-card">
+                <img src="./IMG/gedung1.jpg" alt="Kantor Jakarta" class="office-image">
+                <div class="office-content">
+                    <span class="office-type">Kantor Pusat</span>
+                    <h2>Jepara</h2>
+                    <div class="office-info">
+                        <p>Gedung ARTA Tower, Lantai 2</p>
+                        <p>Jl. Mayong Raya</p>
+                        <p>Mayong, Jepara</p>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span>📞 (021) 456-789</span>
+                        </div>
+                        <div class="contact-item">
+                            <span>📧 artacom@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="map-container">
+                        <a href="#" class="cta-button" onclick="showMap()">Lihat di Peta</a>
+                        
+                        <!-- Modal untuk Google Maps -->
+                        <div id="mapModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 9999;">
+                            <div style="position: relative; margin: 50px auto; width: 80%; height: 80%; background: #fff; border-radius: 10px; overflow: hidden;">
+                                <iframe src="https://www.google.com/maps/embed?pb=!4v1735013158029!6m8!1m7!1sUyl8aamkPh2QKbCkqI7ZJA!2m2!1d-6.790000418716262!2d110.8341722295922!3f104.15763953314973!4f0!5f0.7820865974627469" 
+                                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                                <button onclick="closeMap()" style="position: absolute; top: 10px; right: 10px; background: red; color: #fff; border: none; padding: 10px; border-radius: 5px;">Tutup</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kantor Cabang Surabaya -->
+            <div class="office-card">
+                <img src="./IMG/gedung2.jpg" alt="Kantor Surabaya" class="office-image">
+                <div class="office-content">
+                    <span class="office-type">Kantor Cabang</span>
+                    <h2>Surabaya</h2>
+                    <div class="office-info">
+                        <p>Gedung Metropolis, Lantai 12</p>
+                        <p>Jl. Pemuda No. 45</p>
+                        <p>Surabaya, 60271</p>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span>📞 (031) 444-5678</span>
+                        </div>
+                        <div class="contact-item">
+                            <span>📧 surabaya@arta.co.id</span>
+                        </div>
+                    </div>
+                    <a href="" class="cta-button">Lihat di Peta</a>
+                </div>
+            </div>
+
+            <!-- Kantor Cabang Bandung -->
+            <div class="office-card">
+                <img src="./IMG/gedung3.jpg" alt="Kantor Bandung" class="office-image">
+                <div class="office-content">
+                    <span class="office-type">Kantor Cabang</span>
+                    <h2>Bandung</h2>
+                    <div class="office-info">
+                        <p>Paskal Hyper Square Unit A-12</p>
+                        <p>Jl. Pasir Kaliki No. 25-27</p>
+                        <p>Bandung, 40181</p>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span>📞 (022) 333-9012</span>
+                        </div>
+                        <div class="contact-item">
+                            <span>📧 bandung@arta.co.id</span>
+                        </div>
+                    </div>
+                    <a href="" class="cta-button">Lihat di Peta</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h2>Jam Operasional</h2>
+            <div class="working-hours">
+                <div class="hours-card">
+                    <h3>Senin - Jumat</h3>
+                    <p>08:00 - 17:00 WIB</p>
+                </div>
+                <div class="hours-card">
+                    <h3>Sabtu</h3>
+                    <p>09:00 - 14:00 WIB</p>
+                </div>
+                <div class="hours-card">
+                    <h3>Minggu & Hari Libur</h3>
+                    <p>Tutup</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="satu">
+        <p>Anda membutuhkan bantuan?</p>
+        <a href="https://wa.me/6289508964726" class="contact-btn">Hubungi Kami</a>
+    </div>
+
+    <div class="dua">
+        <div class="dua-main">
+            <div class="btn-main">
+                <img src="./IMG/logo.png" alt="">
+                <p>Kami berkomitmen menciptakan hasil desain yang menarik dan memberikan anggaran biaya konstruksi yang
+                    terbaik</p>
+            </div>
+
+            <div class="btn-main">
+                <h3>Quick <span>Links</span></h3>
+                <a href="index.html">HOME</a>
+                <a href="blog.html">BLOG</a>
+                <a href="lokasi.html" class="active">LOKASI</a>
+                <a href="pesanan.html">PESANAN</a>
+            </div>
+
+            <div class="btn-main">
+                <h3>Follow <span>Us</span></h3>
+                <a href="">Instagram</a>
+                <a href="">Twitter</a>
+                <a href="">Facebook</a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle input');
+        const nav = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', function () {
+            nav.classList.toggle('slide');
+        });
+        function showMap() {
+        document.getElementById('mapModal').style.display = 'block';
+    }
+    
+    function closeMap() {
+        document.getElementById('mapModal').style.display = 'none';
+    }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah Data Proyek</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f9f9f9;
+            background-image: url(IMG/bg1.jpg);
+
+        }
+        form {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        textarea {
+            resize: vertical;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form action="/submit-proyek" method="POST" enctype="multipart/form-data">
+        <h2>Tambah Data Proyek</h2>
+
+        <div class="form-group">
+            <label for="foto_pj">Foto Proyek</label>
+            <input type="file" id="foto_pj" name="foto_pj" accept="image/*" required>
+        </div>
+
+        <div class="form-group">
+            <label for="nama_pj">Nama Proyek</label>
+            <input type="text" id="nama_pj" name="nama_pj" required>
+        </div>
+
+        <div class="form-group">
+            <label for="alamat_pj">Alamat Proyek</label>
+            <textarea id="alamat_pj" name="alamat_pj" rows="3" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="jenis_layanan">Jenis Layanan</label>
+            <select id="jenis_layanan" name="jenis_layanan" required>
+                <option value="Konstruksi">Konstruksi</option>
+                <option value="Desain dan Konstruksi">Desain dan Konstruksi</option>
+                <option value="Renovasi">Renovasi</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="luas_tanah">Luas Tanah (m²)</label>
+            <input type="number" id="luas_tanah" name="luas_tanah" required>
+        </div>
+
+        <div class="form-group">
+            <label for="luas_bangunana">Luas Bangunan (m²)</label>
+            <input type="number" id="luas_bangunana" name="luas_bangunana" required>
+        </div>
+
+        <div class="form-group">
+            <label for="kamar_tidur">Kamar Tidur</label>
+            <input type="number" id="kamar_tidur" name="kamar_tidur" required>
+        </div>
+
+        <div class="form-group">
+            <label for="kamar_mandi">Kamar Mandi</label>
+            <input type="number" id="kamar_mandi" name="kamar_mandi" required>
+        </div>
+
+        <div class="form-group">
+            <label for="kamar_art">Kamar ART</label>
+            <input type="number" id="kamar_art" name="kamar_art">
+        </div>
+
+        <div class="form-group">
+            <label for="kapasitas_mobil">Kapasitas Mobil</label>
+            <input type="number" id="kapasitas_mobil" name="kapasitas_mobil">
+        </div>
+
+        <div class="form-group">
+            <label for="lantai">Jumlah Lantai</label>
+            <input type="number" id="lantai" name="lantai" required>
+        </div>
+
+        <div class="form-group">
+            <label for="pendukung">Fasilitas Pendukung</label>
+            <textarea id="pendukung" name="pendukung" rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="gaya_bangunan">Gaya Bangunan</label>
+            <input type="text" id="gaya_bangunan" name="gaya_bangunan" required>
+        </div>
+
+        <div class="form-group">
+            <label for="deskripsi">Deskripsi</label>
+            <textarea id="deskripsi" name="deskripsi" rows="5"></textarea>
+        </div>
+
+        <button type="submit">Tambah Proyek</button>
+    </form>
+</body>
+</html>

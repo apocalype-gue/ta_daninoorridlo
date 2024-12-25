@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="blog.css">
+    <title>Lihat Detail | Pembangunan Rumah Tinggal Bapak Agus</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo"><img src="./IMG/logo.png" alt=""></div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="blog.html" class="active">BLOG</a></li>
+                <li><a href="lokasi.html">LOKASI</a></li>
+                <li><a href="pesanan.html">PESANAN</a></li>
+                <div class="login">
+                    <a href="https://wa.me/6289508964726" class="btn">Hubungi Kami</a>
+                </div>
+            </ul>
+
+            <div class="menu-toggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="detail">
+        <h1 class="heading">Pembangunan Rumah Tinggal Bapak Agung</h1>
+        <p class="heading" style="font-weight: 500;">📌 Bae, Kudus</p>
+
+        <div class="foto">
+            <img src="./IMG/rumaha.jpg" alt="">
+        </div>
+
+        <div class="album">
+            <div class="gambar">
+                <div class="images">
+                    <img src="./IMG/detil1.jpeg" alt="">
+                </div>
+                
+                <div class="images">
+                    <img src="./IMG/detil2.jpeg" alt="">
+                </div>
+                
+                <div class="images">
+                    <img src="./IMG/detil3.jpeg" alt="">
+                </div>
+                
+                <div class="images">
+                    <img src="./IMG/detil4.jpeg" alt="">
+                </div>
+                
+            </div>
+        </div>
+        
+        <h1 class="heading">Detail</h1>
+
+        <table class="tanah">
+            <tr>
+                <td>Gaya Bangunan</td>
+                <td style="text-align: right;">Desain Modern</td>
+            </tr>
+            <tr>
+                <td>Luas tanah</td>
+                <td style="text-align: right;">999 m²</td>
+            </tr>
+            <tr>
+                <td>Luas Bangunan</td>
+                <td style="text-align: right;">680 m²</td>
+            </tr>
+            <tr>
+                <td>Kamar Tidur</td>
+                <td style="text-align: right;">5</td>
+            </tr>
+            <tr>
+                <td>Kamar Mandi</td>
+                <td style="text-align: right;">5</td>
+            </tr>
+            <tr>
+                <td>Kamar ART</td>
+                <td style="text-align: right;">2</td>
+            </tr>
+            <tr>
+                <td>Kapasitas Mobil</td>
+                <td style="text-align: right;">3</td>
+            </tr>
+            <tr>
+                <td>Lantai</td>
+                <td style="text-align: right;">3</td>
+            </tr>
+            <tr>
+                <td>Fasilitas Pendukung</td>
+                <td style="text-align: right;">Taman dan Kolam Renang</td>
+            </tr>
+            <tr>
+                <td>Jenis Layanan</td>
+                <td style="text-align: right;">Konstruksi</td>
+            </tr>
+        </table>
+    </section>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle input');
+        const nav = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', function () {
+            nav.classList.toggle('slide');
+        });
+    </script>
+
+</body>
+
+</html>
